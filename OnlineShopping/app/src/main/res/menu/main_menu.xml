@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/voice"
+        android:title="voice"
+        android:icon="@drawable/ic_baseline_mic_24"
+        app:showAsAction="always|collapseActionView"
+
+        />
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+    <item
+        android:id="@+id/camera"
+        android:title="Camera"
+        android:icon="@drawable/ic_baseline_photo_camera_24"
+        app:showAsAction="always|collapseActionView"
+        />
+    <item
+        android:id="@+id/imageButton"
+        android:title="cart"
+        android:icon="@drawable/add"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+</menu>

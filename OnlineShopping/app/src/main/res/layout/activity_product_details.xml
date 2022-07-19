@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_details"
+    android:background="@drawable/home">
+
+    <Button
+        android:id="@+id/addQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quentity"
+        app:layout_constraintVertical_bias="0.1"></Button>
+
+    <Button
+        android:id="@+id/subQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:paddingLeft="10dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quentity"
+        app:layout_constraintVertical_bias="0.102"></Button>
+
+    <Button
+        android:id="@+id/addtocart"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:foregroundGravity="center"
+        android:text="Add To Cart"
+        android:textAllCaps="false"
+        android:textColor="#F3EFEF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <ImageView
+        android:id="@+id/proimage"
+        android:layout_width="394dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/proname"
+        android:layout_width="369dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FBFAF9"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proimage"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/proprice"
+        android:layout_width="369dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FAF9F8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proimage"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <EditText
+        android:id="@+id/quentity"
+        android:layout_width="309dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Quentity"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="#F8F6F6"
+        android:textColorHint="#FAF7F7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proprice"
+        app:layout_constraintVertical_bias="0.123" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
